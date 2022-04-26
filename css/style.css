@@ -1,0 +1,75 @@
+@import url(./_fonts.css);
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+body {
+   font-family: "Lato-Light";
+   background-color: #f6f6f6;
+}
+.content {
+   width: 73.1%;
+   margin: 0 auto;
+}
+.header-title {
+   font-family: "Lato-Bold";
+   font-size: 35px;
+   text-align: center;
+   text-transform: uppercase;
+   padding-top: 100px;
+   padding-bottom: 40px;
+}
+.header-title::after {
+   content: "";
+   background: #dddbdb;
+   width: 50px;
+   height: 3px;
+   display: block;
+   margin: 0 auto;
+   border-radius: 25%;
+}
+.header-content {
+   width: 47.86%;
+   text-align: center;
+   margin: 0 auto;
+}
+.main {
+   display: flex;
+   justify-content: space-between;
+   margin-top: 55px;
+}
+.photo {
+   width: 265px;
+   height: 255px;
+   box-shadow: 0 0 10px #00000080;
+}
+.name {
+   font-family: "Lato-Bold";
+   font-size: 18px;
+   margin-top: 20px;
+}
+.profession {
+   font-size: 14px;
+   color: #646464;
+}
+.portfolio {
+   position: relative;
+   max-width: 265px;
+   max-height: 255px;
+}
+.messenger {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   position: absolute;
+   top: 0;
+   bottom: 0;
+   height: 100%;
+   width: 100%;
+   opacity: 0;
+   background-color: #00add9;
+}
+.portfolio:hover .messenger {
+   opacity: 1;
+}
